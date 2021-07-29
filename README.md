@@ -3,8 +3,22 @@
 
 ---
 
-#### 🚧  Em construção...  🚧
-# 💻 Sobre o projeto
+<h4 align="center"> 
+	🚧  Calculadora 🔢 Concluído 🚀 🚧
+</h4>
+
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-pré-requisitos">Pré requisitos</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#-licença">Licença</a>
+</p>
+
+
+
+## 💻 Sobre o projeto
 Uma calculadora simples com visual moderno desenvolvida em Flutter
 
 
@@ -12,7 +26,7 @@ Uma calculadora simples com visual moderno desenvolvida em Flutter
 
 O layout desta calculadora foi pensada para ser simples intuitiva e moderna.
 
-## Pré-requisitos
+## Pré requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
  - [Git](https://git-scm.com), 
  - [Flutter](https://flutter.dev/docs/get-started/install)
@@ -56,7 +70,7 @@ Foi utilizado somente o Framework [Flutter](https://flutter.dev/docs/get-started
 
 
 ----------------------------------------------------------------
-### Autor
+## 🦸 Autor
 <a href="https://github.com/Fabiopmfilho">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37713768?s=400&u=5ae234755a07a41c40e5c9ab0b91c3eb26fd42e9&v=4" width="100px;" alt=""/>
  <br />
