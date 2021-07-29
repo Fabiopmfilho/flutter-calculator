@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:calculadora_flutter/MyButton.dart';
 import 'package:math_expressions/math_expressions.dart';
 
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -39,9 +40,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Calculadora'),
-      ),
+
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
@@ -55,7 +54,7 @@ class _HomeState extends State<Home> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       userInput,
-                      style: TextStyle(fontSize: 34, color: Colors.white70),
+                      style: TextStyle(fontSize: 24, color: Colors.white70),
                     ),
                   ),
                   Container(
@@ -64,7 +63,7 @@ class _HomeState extends State<Home> {
                     child: Text(
                       answer,
                       style: TextStyle(
-                        fontSize: 80,
+                        fontSize: 60,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -153,7 +152,7 @@ class _HomeState extends State<Home> {
                         });
                       },
                       buttonText: buttons[index],
-                      fontSize: 48.0,
+                      fontSize: 38.0,
                       color: Colors.orange[700],
                       textColor: Colors.white,
                     );
@@ -186,11 +185,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void doubleZero() {
-
-  }
-
-
   bool isOperator(String x) {
     if (x == '/' || x == 'x' || x == '-' || x == '+' || x == '=') {
       return true;
@@ -206,6 +200,12 @@ class _HomeState extends State<Home> {
     Expression exp = p.parse(finalUserInput);
     ContextModel cm = ContextModel();
     double eval = exp.evaluate(EvaluationType.REAL, cm);
+
+    //if (answer.length >= 8) {}
+
+    final result = eval;
+    print(result.toStringAsExponential());
+
     answer = eval.toString();
   }
 
